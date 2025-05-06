@@ -1,0 +1,50 @@
+/* src/App.css */
+:root {
+    --primary: #4A90E2;
+    --secondary: #50E3C2;
+    --bg-light: #f9fafb;
+    --navbar-bg: #e6f0ff;
+    --text-dark: #222;
+    --text-muted: #7f8c8d;
+  }
+  
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #222;
+    margin: 0;
+    padding: 0;
+    background-color: #fdfdfd;
+  }
+  
+  h1, h2, h3, .logo {
+    font-family: 'Lato', sans-serif;
+  }
+  
+.hero {
+    text-align: center;
+    padding: 2rem;
+    background: #f2f2f2;
+  }
+  
+  .cards {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+    gap: 1rem;
+  }
+  
+  .card {
+    background: #fff;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    width: 30%;
+    text-align: center;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background: #f9f9f9;
+    margin-top: 2rem;
+  }
+  

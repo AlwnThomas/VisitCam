@@ -1,0 +1,8 @@
+Base Theme: Modern Cambridge Blue
+
+Primary #4A90E2	Main brand color (buttons, links, highlights)
+Secondary	#50E3C2	Accent color (cards, icons, hovers)
+Background	#f9fafb	Light, breathable background
+Navbar/Footer #e6f0ff Soft blue for calm, trustworthy look
+Text #292929 Main text
+Muted Gray	#7f8c8d	Secondary text or labels
