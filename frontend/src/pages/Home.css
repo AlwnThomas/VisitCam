@@ -1,0 +1,71 @@
+.hero {
+    text-align: center;
+    background: #f9fafb;
+
+  }
+
+.hero-image {
+    width: 75vw;
+    max-width: 4000px;
+    display: block;
+    margin: 0 auto 0 auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.hero-wrapper {
+    width: 75vw;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .desc {
+    width: 60vw;
+    max-width: 60vw;
+    text-align: left;
+    margin-left: 0;
+  }
+
+  .desc h4 {
+    margin-bottom: 0rem;
+    font-size: 1em;
+    font-weight: 400;
+  }
+  
+  .desc h2 {
+    margin: 0;
+    font-size: 2em;
+    font-weight: 800;
+  }
+
+  .desc p {
+    margin: 1em 0;
+    color: #7f8c8d;
+  }
+
+  .desc-text.clamped {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .desc-text.expanded {
+    display: block;
+  }
+  
+  .read-more-btn {
+    margin: 0;
+    padding: 0;
+    background: none;
+    color: #007acc;
+    border: none;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+  
+  
+  
+  
