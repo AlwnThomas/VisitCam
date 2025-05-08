@@ -8,7 +8,6 @@ const Home = () => {
     return(
         <div>
             <header className="hero">
-                <p>Your Cam Visiting Guide</p>
 
                 <div className="hero-wrapper">
                 <img src="/assets/VisitCam.png" alt="cam city view" className="hero-image" />

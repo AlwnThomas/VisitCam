@@ -63,12 +63,12 @@ body {
 
   .card h2 {
     margin: 0;
-    font-size: clamp(1.2rem, 2vw, 2rem);
+    font-size: clamp(0.75rem, 2.5vw, 2rem);
   }
   
   .card p {
     margin: 0;
-    font-size: clamp(0.75rem, 1.2vw, 1rem); 
+    font-size: clamp(0.5rem, 1.4vw, 1rem); 
     color: #7f8c8d;
   }  
 
