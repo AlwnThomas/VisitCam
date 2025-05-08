@@ -1,14 +1,21 @@
-import React from "react";
-import Navbar from "./components/Navbar"
+import React from 'react';
+import { Routes, Route } from 'react-router-dom';
+import Navbar from './components/Navbar';
 import Home from './pages/Home';
+import Eat from './pages/Eat.tsx';
+import Travel from './pages/Travel.tsx'
 
-function App() {
-    return(
-        <div className="App">
-            <Navbar />
-            <Home />
-        </div>
-    );
+const App = () => {
+  return (
+    <>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/eat" element={<Eat />} />
+        <Route path="/travel" element={<Travel />} />
+      </Routes>
+    </>
+  );
 };
 
 export default App;

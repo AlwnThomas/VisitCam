@@ -1,0 +1,47 @@
+.main {
+    width: 70vw;
+    margin: 0 auto;          /* ✅ horizontally center */
+    padding: 2rem 1rem;      /* ✅ internal spacing */
+    box-sizing: border-box; /* ✅ includes padding inside 70vw */
+  }
+  
+.main h1 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+.main p {
+    font-size: 1.rem;
+    margin: 0.2rem auto;
+}
+
+.eat-links {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+    text-align: center;
+  }
+  
+  .eat-links a {
+    text-decoration: none;
+    color: #292929;
+    font-weight: 500;
+    transition: transform 0.2s ease;
+  }
+  
+  .eat-links a:hover {
+    transform: scale(1.05);
+  }
+  
+  .eat-links img {
+    width: 80%;
+    height: 80px;
+    object-fit: cover;
+  }
+  
+  .eat-links p {
+    margin-top: 0.5rem;
+    font-size: 0.95rem;
+  }
+  
