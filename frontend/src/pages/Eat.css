@@ -1,8 +1,8 @@
 .main {
     width: 70vw;
-    margin: 0 auto;          /* ✅ horizontally center */
-    padding: 2rem 1rem;      /* ✅ internal spacing */
-    box-sizing: border-box; /* ✅ includes padding inside 70vw */
+    margin: 0 auto; 
+    padding: 2rem 1rem;
+    box-sizing: border-box;
   }
   
 .main h1 {
@@ -15,33 +15,97 @@
     margin: 0.2rem auto;
 }
 
+.eat-scroll-container {
+  position: relative;
+  margin: 2rem 0;
+}
+
 .eat-links {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-    gap: 1.5rem;
-    margin: 2rem 0;
-    text-align: center;
-  }
-  
-  .eat-links a {
-    text-decoration: none;
-    color: #292929;
-    font-weight: 500;
-    transition: transform 0.2s ease;
-  }
-  
-  .eat-links a:hover {
-    transform: scale(1.05);
-  }
-  
-  .eat-links img {
-    width: 80%;
-    height: 80px;
-    object-fit: cover;
-  }
-  
-  .eat-links p {
-    margin-top: 0.5rem;
-    font-size: 0.95rem;
-  }
+  display: flex;
+  overflow-x: auto;
+  gap: 1rem;
+  padding: 1rem 0;
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+}
+
+.eat-links::-webkit-scrollbar {
+  display: none;
+}
+
+.eat-links a {
+  flex: 0 0 auto;
+  width: 120px;
+  text-align: center;
+  text-decoration: none;
+  color: #292929;
+  font-weight: 500;
+  transition: transform 0.2s ease;
+  scroll-snap-align: start;
+}
+
+.eat-links a:hover {
+  transform: scale(1.05);
+}
+
+.eat-links img {
+  width: 50%;
+  height: 50%;
+  object-fit: cover;
+}
+
+.eat-links p {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+}
+
+/* Scroll Arrows */
+.scroll-arrow {
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+  background: #ffffffdd;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  z-index: 2;
+  padding: 0.2rem 0.5rem;
+  border-radius: 6px;
+  transition: background 0.2s ease;
+}
+
+.scroll-arrow:hover {
+  background: #f0f0f0;
+}
+
+.scroll-arrow.left {
+  left: -0.5rem;
+}
+
+.scroll-arrow.right {
+  right: -0.5rem;
+}
+
+/* Fades */
+.fade-left,
+.fade-right {
+  position: absolute;
+  top: 0;
+  width: 40px;
+  height: 100%;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.fade-left {
+  left: 0;
+  background: linear-gradient(to right, #f9fafb, transparent);
+}
+
+.fade-right {
+  right: 0;
+  background: linear-gradient(to left, #f9fafb, transparent);
+}
+
   
