@@ -87,22 +87,20 @@ const NearYou = () => {
 
       {/* Near You visual section */}
       <div className="nearby-scroll-container">
-  <div className="cards" ref={scrollRef}>
+  <div className="nearby-cards" ref={scrollRef}>
     {nearestStores.map((store, index) => (
-      <div className="card" key={index}>
-        <img
-          src={store.image || "/assets/placeholder.png"}
-          alt={store.name}
-          className="card-icon"
-        />
-        <div className="card-content">
-          <h2>{store.name}</h2>
-          <p>{store.type}</p>
+      <div className="nearby-card" key={index}>
+        <div className="card-image-wrapper">
+        <div className="card-image">
+          <img src={store.image || "/assets/placeholder.png"} alt={store.name} />
         </div>
+        </div>
+        <p className="store-name">{store.name}</p>
       </div>
     ))}
   </div>
 </div>
+
 
     </>
   );

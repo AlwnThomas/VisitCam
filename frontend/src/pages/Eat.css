@@ -117,14 +117,13 @@
 }
 
 .eat-section h2 {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   margin-bottom: 0.5rem;
 }
 
 .eat-section p {
   font-size: 1rem;
   color: #555;
-  margin-bottom: 1rem;
 }
 
 .nearby-scroll-container {
@@ -138,25 +137,31 @@
   display: flex;
   gap: 1rem;
   padding-left: 0.5rem;
+  margin: 0;
 }
 
 .nearby-card {
   flex: 0 0 auto;
-  width: 100px;
+  width: 30%;
   text-align: center;
   cursor: pointer;
   scroll-snap-align: start;
 }
 
 .card-image {
-  width: 100px;
-  height: 100px;
+  width: 100%;
+  height: 100%;
   background: #eee;
   border-radius: 12px;
   overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.card-image-wrapper {
+  aspect-ratio: 2/ 1;
+  width: 100%;
 }
 
 .card-image img {
@@ -167,8 +172,6 @@
 }
 
 .store-name {
-  margin-top: 0.5rem;
-  font-size: 0.9rem;
+  font-size: 0.75rem !important;
   font-weight: 500;
-  color: #333;
 }
