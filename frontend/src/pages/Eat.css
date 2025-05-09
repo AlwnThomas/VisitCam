@@ -52,7 +52,7 @@
 .eat-links img {
   width: 50%;
   height: 50%;
-  object-fit: cover;
+  object-fit:scale-down;
 }
 
 .eat-links p {
@@ -108,4 +108,67 @@
   background: linear-gradient(to left, #f9fafb, transparent);
 }
 
-  
+.eat-section {
+  margin: 3rem 0;
+  padding: 0 1rem;
+  max-width: 70vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.eat-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.eat-section p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.nearby-scroll-container {
+  overflow-x: auto;
+  padding: 1rem 0;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+}
+
+.nearby-cards {
+  display: flex;
+  gap: 1rem;
+  padding-left: 0.5rem;
+}
+
+.nearby-card {
+  flex: 0 0 auto;
+  width: 100px;
+  text-align: center;
+  cursor: pointer;
+  scroll-snap-align: start;
+}
+
+.card-image {
+  width: 100px;
+  height: 100px;
+  background: #eee;
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.store-name {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #333;
+}
