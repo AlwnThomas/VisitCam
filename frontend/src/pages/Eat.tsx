@@ -1,6 +1,8 @@
 import { useRef, useState, useEffect } from 'react';
 import { stores } from '../data/stores.ts';
 import type { Store } from '../data/stores.ts';
+import { stores as fastFoodStores } from '../data/fastfood.ts';
+import type { FastFood } from '../data/fastfood.ts';
 import '../pages/Eat.css';
 
 // 🍽️ Main Eat Page
@@ -152,6 +154,24 @@ const NearYou = () => {
       <section id="quick-bites" className="eat-section">
         <h2>Quick Bites</h2>
         <p>Perfect picks for when you're short on time.</p>
+  <div className="nearby-scroll-container">
+    <div className="nearby-cards">
+      {fastFoodStores.map((place: FastFood, index: number) => (
+        <div className="nearby-card" key={index}>
+          <div className="card-image-wrapper">
+            <div className="card-image">
+              <img
+                src={place.image || '/assets/placeholder.png'}
+                alt={place.name}
+              />
+            </div>
+          </div>
+          <p className="store-name">{place.name}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+
       </section>
 
       <section id="most-reviewed" className="eat-section">
